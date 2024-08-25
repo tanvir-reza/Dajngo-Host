@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  db_postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1516
+      - POSTGRES_DB=my_db
+    ports:
+      - "9001:9001"
+    command: -p 9001
+    restart: always
+
+
+  my_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ENVIRONMENT=development
+      - DJANGO_RUNNING_IN_DOCKER=True
+    env_file:
+      - .env
+    depends_on:
+      - db_postgres
+    command: python manage.py runserver 0.0.0.0:80
+    volumes:
+      - .:/app/core
+    ports:
+      - "80:80"
+    restart: always
