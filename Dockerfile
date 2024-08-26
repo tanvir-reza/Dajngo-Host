@@ -7,4 +7,4 @@ RUN pip install --upgrade pip
 COPY requirements.txt /app/core/
 RUN pip install -r requirements.txt
 
-EXPOSE 9003
+EXPOSE 4003
