@@ -24,9 +24,9 @@ services:
       - .env
     depends_on:
       - db_postgres
-    command: python manage.py runserver 0.0.0.0:80
+    command: python manage.py runserver 0.0.0.0:4003
     volumes:
       - .:/app/core
     ports:
-      - "80:80"
+      - "4003:4003"
     restart: always
