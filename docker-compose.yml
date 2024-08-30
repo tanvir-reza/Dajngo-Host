@@ -27,7 +27,6 @@ services:
     command: python manage.py runserver 0.0.0.0:4003
     volumes:
       - .:/app/core
-      - /root/Django-Host/static/:/app/core/static/
     ports:
       - "4003:4003"
     restart: always
