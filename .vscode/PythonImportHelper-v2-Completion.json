@@ -49,6 +49,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "staticfiles_urlpatterns",
+        "importPath": "django.contrib.staticfiles.urls",
+        "description": "django.contrib.staticfiles.urls",
+        "isExtraImport": true,
+        "detail": "django.contrib.staticfiles.urls",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.contrib.staticfiles.urls",
+        "description": "django.contrib.staticfiles.urls",
+        "isExtraImport": true,
+        "detail": "django.contrib.staticfiles.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -187,7 +211,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"Asia/Dhaka\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"Asia/Dhaka\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -196,7 +220,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "TIME_ZONE = \"Asia/Dhaka\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files",
+        "peekOfCode": "TIME_ZONE = \"Asia/Dhaka\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -205,7 +229,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -214,7 +238,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -223,7 +247,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -232,7 +256,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "STATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = \"/static/\"\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -241,16 +265,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
-        "detail": "core.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DEFAULT_AUTO_FIELD",
-        "kind": 5,
-        "importPath": "core.settings",
-        "description": "core.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"static\")\n# Default primary key field type\n# media files\nMEDIA_ROOT = os.path.join(BASE_DIR, \"media\")\nMEDIA_URL = \"/media/\"\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -286,7 +301,7 @@
         "kind": 5,
         "importPath": "core.urls",
         "description": "core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]\nurlpatterns += staticfiles_urlpatterns()\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "core.urls",
         "documentation": {}
     },
