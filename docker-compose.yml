@@ -30,14 +30,3 @@ services:
     ports:
       - "4003:4003"
     restart: always
-
-  nginx:
-    image: nginx:latest
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./static:/static
-      - ./media:/media
-    depends_on:
-      - my_app
