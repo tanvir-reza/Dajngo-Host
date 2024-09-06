@@ -6,3 +6,7 @@
 /.vscode
 /.vscode
 .vscode/PythonImportHelper-v2-Completion.json
+/venv
+/venv
+/.vscode
+*.pyc
