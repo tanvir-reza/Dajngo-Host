@@ -27,6 +27,8 @@ services:
     command: uvicorn core.asgi:application --host 0.0.0.0 --port 4003 --reload
     volumes:
       - .:/app/core
+      - /etc/ssl/djangodev/fullchain.pem:/app/ssl/fullchain.pem
+      - /etc/ssl/djangodev/privatekey.pem:/app/ssl/privatekey.pem
     ports:
       - "4003:4003"
     restart: always
