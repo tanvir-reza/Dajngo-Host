@@ -28,7 +28,7 @@ services:
     volumes:
       - .:/app/core
       - /etc/ssl/djangodev/fullchain.pem:/app/ssl/fullchain.pem
-      - /etc/ssl/djangodev/privatekey.pem:/app/ssl/privatekey.pem
+      - /etc/ssl/djangodev/private.key:/app/ssl/private.key
     ports:
       - "4003:4003"
     restart: always
