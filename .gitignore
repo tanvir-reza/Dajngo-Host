@@ -12,3 +12,7 @@
 *.pyc
 /.vscode
 .vscode/PythonImportHelper-v2-Completion.json
+*.pyc
+/core/__pycache__
+core/__pycache__/settings.cpython-310.pyc
+core/__pycache__/urls.cpython-310.pyc
